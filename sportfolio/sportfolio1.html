@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MI SPORTFOLIO</title>
+
+  <link rel="stylesheet" href="sportfolio2.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <meta name="author" content="Luis Miguel Pérez Gonzalez" />
+  <meta name="description" content="Trabajo académico para 1º Bachillerato B del IES Las Salinas. Proyecto personal de educación física realizado por Luis Miguel." />
+  <meta name="keywords" content="Luis Miguel, Las Salinas, 1º Bach B, trabajo académico, educación física, sportfolio, proyecto escolar" />
+<link rel="icon" type="image/png" href="Captura de pantalla 2025-11-27 a las 19.48.01.png">
+
+
+</head>
+<body>
+  <header>
+    <h1>MI SPORTFOLIO</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi" class="nav-link" data-target="sobre-mi">Sobre mí</a></li>
+        <li><a href="#aprendizaje" class="nav-link" data-target="aprendizaje">Aprendizaje del trimestre</a></li>
+        <li><a href="#juego-final" class="nav-link" data-target="juego-final">Juego final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="page-section" aria-labelledby="titulo-sobre">
+      <button class="close-section" aria-label="Cerrar sección">✕</button>
+      <h2 id="titulo-sobre">Sobre mí</h2>
+
+      <div class="bio">
+        <div class="bio-left">
+          <p><strong>Nombre:</strong> Luis Miguel Pérez Gonzalez</p>
+          <p><strong>Datos Antropométricos:</strong></p>
+          <ul>
+            <li>Altura: 1.73 m</li>
+            <li>Peso: 72,8 kg</li>
+            <li>Grasa corporal: 16%</li>
+            <li>Agua corporal: 62%</li>
+            <li>Presión sistólica: 124 mmHg</li>
+            <li>Presión diastólica: 97 mmHg</li>
+            <li>Puls/min: 70 ppm</li>
+            <li>I.M.C: 24,3</li>
+            <li>Masa magra: 61,152 kg</li>
+          </ul>
+
+          <h3>Dieta de la semana del 16-23 de noviembre</h3>
+
+          <!-- Dieta envuelta en un solo details -->
+          <details class="dieta-wrapper">
+            <summary>Ver registro completo de la dieta</summary>
+            <div class="dieta-semana">
+              <details>
+                <summary>Domingo 16</summary>
+                <ul>
+                  <li><strong>Desayuno (09:05):</strong> 8x Galletas de chocolate y leche con netzcku: 3929 kcal</li>
+                  <li><strong>Comida (14:26):</strong> 2x vasos de agua, arroz y palos de pollo: 946 kcal</li>
+                  <li><strong>Merienda-hidratación (16:00-18:00):</strong> 2x vasos de agua, arroz y palos de pollo: 946 kcal</li>
+                  <li><strong>Cena (20:30):</strong> 2x sándwich de mortadela con aceitunas: 190 kcal</li>
+                  <li><strong>En el día entero :</strong> Tome 2l de agua </li>
+                </ul>
+              </details>
+
+              <details>
+                <summary>Lunes 17</summary>
+                <ul>
+                  <li><strong>Desayuno (07:27):</strong> 2x Arepa con jamón y un colacao: 600 kcal</li>
+                  <li><strong>Comida (13:30):</strong> Arroz blanco y fríjoles: 380 g</li>
+                  <li><strong>Cena (21:30):</strong> 3x perrito: 490 kcal</li>
+                  <li><strong>En el día entero :</strong> Tome 750ml de agua </li>
+                </ul>
+              </details>
+
+              <details>
+                <summary>Martes 18</summary>
+                <ul>
+                  <li><strong>Desayuno (07:27):</strong> 1x café con leche y 2x croissant: 560 kcal</li>
+                  <li><strong>Comida (14:00):</strong> No comí</li>
+                  <li><strong>Cena (20:45):</strong> 2x yogurt: 167 kcal</li>
+                  <li><strong>En el día entero :</strong> Tome 1l y 750ml de agua </li>
+                </ul>
+              </details>
+
+              <details>
+                <summary>Miércoles 19</summary>
+                <ul>
+                  <li><strong>Desayuno (07:27):</strong> 1x revuelto de huevo con cebolla y salchichas: 450-560 kcal</li>
+                  <li><strong>Comida (14:20):</strong> 1x arroz blanco, lentejas 150 g y 5 palos de pollo: 745-845 kcal</li>
+                  <li><strong>Cena (21:00):</strong> No cené</li>
+                  <li><strong>En el día entero :</strong> Tome 1l y 500ml de agua </li>
+                </ul>
+              </details>
+
+              <details>
+                <summary>Jueves 20</summary>
+                <ul>
+                  <li><strong>Desayuno (08:37):</strong> 2x sándwich de nocilla y 1x café: 610 kcal</li>
+                  <li><strong>Comida (12:30):</strong> 1x caldo de verduras, arroz blanco y macarrones con mayonesa: 940 kcal</li>
+                  <li><strong>Merienda (19:00):</strong> 1x gofre de chocolate 100 g y 1x Fanta de limón: 570 kcal</li>
+                  <li><strong>En el día entero :</strong> Tome 1l  de agua </li>
+                </ul>
+              </details>
+
+              <details>
+                <summary>Viernes 21</summary>
+                <ul>
+                  <li><strong>Desayuno (07:10):</strong> 1x plato de revuelto de huevo con salchichas y un colacao: 610 kcal</li>
+                  <li><strong>Comida (14:20):</strong> 1x platoo de lentejas y chorizo: 400kcal</li>
+                  <li><strong>Cena (22:10):</strong> 2x sanwich de jamon y queso: 600kcal</li>
+                  <li><strong>En el día entero :</strong> Tome 1l y 250ml de agua </li>             
+                </ul>
+              </details>
+
+              <details>
+                <summary>Sábado 22</summary>
+                <ul>
+                  <li><strong>Desayuno (07:10):</strong> Cereales de arandans: 350kcal</li>
+                  <li><strong>Comida (14:00):</strong> un plato de arroz blanco de 300g,3 palos de pollo y 1 huevo:700kcal</li>
+                  <li><strong>Cena (20:00):</strong> Salmón al horno y patata cocida: 550 kcal</li>
+                  <li><strong>En el día entero :</strong> Tome 2l de agua </li>
+                </ul>
+              </details>
+              
+              <details>
+                <summary>Plan dafo</summary>
+                <ul>
+                  <li><strong class="plandafo1">Debilidades:</strong> Siento que mi alimentación ha sido bastante irregular: algunos días he comido muchísimo y otros casi nada, sobre todo cuando estaba malo y no tenía ganas de comer. También he tirado bastante de bollería, sándwiches y cosas rápidas, y he tomado poca fruta y verdura. Además, algunos días no he bebido toda el agua que debería.</li>
+                  <li><strong class="plandafo2">Amenazas:</strong> Sé que esta forma de comer puede hacer que tenga bajones de energía y peor rendimiento en educación física. También me puede causar digestiones pesadas o que coja más grasa si repito días muy calóricos. Y cuando estoy enfermo y no como bien, tardo más en recuperarme.</li>
+                  <li><strong class="plandafo3">Fortalezas:</strong> Aun así, tengo cosas positivas: algunos días he hecho comidas bastante completas, con arroz, pollo, huevo, lentejas o pescado. Intento beber agua todos los días y, más o menos, mantengo buenas fuentes de proteína. Además, el hecho de registrar mi dieta ya me ayuda a ser más consciente de lo que hago bien y mal.</li>
+                  <li><strong class="plandafo4">Oportunidades:</strong>Creo que tengo margen para mejorar fácilmente: añadir más fruta y verdura, cambiar algunos ultraprocesados por opciones mejores, organizarme para no saltarme comidas y beber más agua. También puedo intentar que las cenas sean un poco más ligeras y a mejor hora.</li>
+                </ul>
+              </details>
+            </div>
+          </details>
+
+          <!-- NUEVO DETAILS: Frecuencia cardiaca -->
+          <h3>Frecuencia cardiaca</h3>
+          <details class="cardio-details">
+            <summary>Ver mi frecuencia cardiaca</summary>
+
+            <div class="cardio-text">
+              <p>
+               Mis pulsaciones en reposo son normales porque están dentro del rango esperado para mi edad. Durante el trote suave también fueron correctas, ya que entran en la intensidad moderada. Mi frecuencia cardiaca máxima es de 204 ppm y, para trabajar al 70% de intensidad, debería mantener unas 143 ppm. En conjunto, la práctica confirma lo estudiado: mi corazón aumenta su ritmo según el esfuerzo y recupera después, funcionando de forma adecuada.</p>
+              <p>
+                <ol>
+                <li>Taquicardia: ritmo cardiaco demasiado alto (más de 100 ppm en reposo).</li>
+                <li>Bradicardia: ritmo cardiaco demasiado bajo (menos de 60 ppm en reposo).</li>
+                </ol>  
+               </p>
+            </div>
+
+            <!-- Tabla frecuencia cardiaca -->
+            <div class="fc-table-wrapper">
+              <table class="fc-table">
+                <thead>
+                  <tr>
+                    <th>Nº</th>
+                    <th>Actividad</th>
+                    <th>PPM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>Tumbado</td><td>72</td></tr>
+                  <tr><td>2</td><td>Sentado</td><td>76</td></tr>
+                  <tr><td>3</td><td>De pie (reposo)</td><td>80</td></tr>
+                  <tr><td>4</td><td>Camina 1’</td><td>104</td></tr>
+                  <tr><td>5</td><td>5’ de trote suave</td><td>156</td></tr>
+                  <tr><td>6</td><td>3’ después</td><td>120</td></tr>
+                  <tr><td>7</td><td>20 sentadillas + 10 flexiones</td><td>132</td></tr>
+                  <tr><td>8</td><td>3’ después</td><td>84</td></tr>
+                  <tr><td>9</td><td>Sprint de 40 m</td><td>164</td></tr>
+                  <tr><td>10</td><td>3’ después</td><td>104</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Gráfica frecuencia cardiaca -->
+            <div class="chart-wrap cardio-chart">
+              <canvas id="frecuenciaChart"
+                      width="800"
+                      height="320"
+                      aria-label="Gráfico de frecuencia cardiaca"
+                      role="img"></canvas>
+            </div>
+          </details>
+
+          <!-- PRUEBAS FÍSICAS EN DETAILS -->
+          <h3>Pruebas físicas</h3>
+          <details class="pruebas-details">
+            <summary>Ver resultados de las pruebas físicas</summary>
+            <p class="pruebas-intro">Esto son los resultados de mis pruebas físicas.</p>
+            <div class="chart-wrap">
+              <canvas id="pruebasChart" width="800" height="320" aria-label="Gráfico de pruebas físicas" role="img"></canvas>
+            </div>
+
+            <p class="pruebas-refuerzo">
+              Antes que nada, pondré vídeos de ejercicios para reforzar mis pruebas físicas:
+            </p>
+
+            <div class="video-link">
+              <span>Esta rutina para mejorar mi velocidad: </span>
+              <a href="https://www.youtube.com/shorts/jrPxJhnAqRc" target="_blank">
+                Ver en YouTube
+              </a>
+              <div class="video-preview">
+                <iframe 
+                  src="https://www.youtube.com/shorts/jrPxJhnAqRc"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <div class="video-link">
+              <span>Esta rutina para mejorar mi fuerza en los saltos: </span>
+              <a href="https://www.youtube.com/shorts/r3Frtqmr_Rw" target="_blank">
+                Ver en YouTube
+              </a>
+              <div class="video-preview">
+                <iframe 
+                  src="https://www.youtube.com/shorts/r3Frtqmr_Rw"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <div class="video-link">
+              <span>Esta rutina para mejorar mi fuerza de lanzamiento: </span>
+              <a href="https://www.youtube.com/shorts/AxJLIoimvro" target="_blank">
+                Ver en YouTube
+              </a>
+              <div class="video-preview">
+                <iframe 
+                  src="https://www.youtube.com/shorts/AxJLIoimvro"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <div class="video-link">
+              <span>Claves para mejorar mi resistencia: </span>
+              <a href="https://www.youtube.com/shorts/mUMubQ7ADCg" target="_blank">
+                Ver en YouTube
+              </a>
+              <div class="video-preview">
+                <iframe 
+                  src="https://www.youtube.com/shorts/mUMubQ7ADCg"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Recuadro con la foto -->
+        <aside class="photo-box" aria-hidden="false">
+          <img src="DSCF6318.JPG" alt="Foto de entrenamiento / fondo anterior" />
+          <figcaption>Foto de entrenamiento</figcaption>
+        </aside>
+      </div>
+    </section>
+
+    <!-- APRENDIZAJE -->
+    <section id="aprendizaje" class="page-section" aria-labelledby="titulo-aprendizaje">
+      <button class="close-section" aria-label="Cerrar sección">✕</button>
+      <h2 id="titulo-aprendizaje">Aprendizaje del trimestre</h2>
+
+      <!-- CONTROLES DE PARTES -->
+      <div class="aprendizaje-tabs">
+        <button class="aprendizaje-tab active" data-part="1">Parte 1</button>
+        <button class="aprendizaje-tab" data-part="2">Parte 2</button>
+        <button class="aprendizaje-tab" data-part="3">Parte 3</button>
+      </div>
+
+      <!-- PARTE 1 -->
+      <div class="aprendizaje-part active" data-part="1">
+        <div class="aprendizaje-grid">
+          <!-- CAJA 1 CORE -->
+          <article class="aprendizaje-card core-card">
+            <div class="aprendizaje-card-title">
+              -- CORE --
+            </div>
+
+            <h3>Importancia</h3>
+            <p>El core es clave para la estabilidad y el correcto funcionamiento del cuerpo. Hace referencia a los músculos de la zona central, como los abdominales, la región lumbar, los glúteos y las caderas.</p>
+            <ul>
+              <li>Mejora de la postura.</li>
+              <li>Prevención de lesiones.</li>
+              <li>Movimientos más eficientes.</li>
+              <li>Mayor estabilidad y equilibrio.</li>
+            </ul>
+
+            <h3>Características</h3>
+            <p>El trabajo de core incluye ejercicios en distintos planos (frontal, sagital y transversal) para activar la zona media desde todas las direcciones. Se busca fuerza, estabilidad y resistencia, con mucha implicación del equilibrio.</p>
+
+            <h3>Consecuencias de no trabajar el core</h3>
+            <p>Puede aparecer dolor lumbar, mala postura, menor rendimiento deportivo y mayor riesgo de lesiones en espalda y caderas.</p>
+
+            <h3>Ejercicios</h3>
+            <h4>Plancha</h4>
+            <ul>
+              <li>Mantén el cuerpo alineado en posición de tabla, apoyándote en los antebrazos y las puntas de los pies.</li>
+            </ul>
+
+            <h4>Elevaciones de piernas</h4>
+            <ul>
+              <li>Recuéstate boca arriba con las piernas estiradas y eleva ambas sin despegar la zona lumbar.</li>
+            </ul>
+
+            <h4>Giros rusos</h4>
+            <ul>
+              <li>Siéntate con rodillas flexionadas y rota el tronco de lado a lado.</li>
+            </ul>
+
+            <h4>Escaladores</h4>
+            <ul>
+              <li>En posición de plancha, lleva las rodillas al pecho de forma alterna.</li>
+            </ul>
+
+            <h4>Bird-dog</h4>
+            <ul>
+              <li>En cuadrupedia, extiende brazo derecho y pierna izquierda, y luego cambia.</li>
+            </ul>
+
+            <h3>Estiramientos</h3>
+            <p>Cobra, gato-vaca, torsión en el suelo, puente y ejercicios con pelota para relajar la zona abdominal y lumbar.</p>
+
+            <!-- Imágenes core -->
+            <div class="card-images">
+              <div class="img-wrap">
+                <img src="Fotos del core/Captura de pantalla 2025-11-25 a las 16.43.17.png" alt="Ejercicio de core 1">
+              </div>
+              <div class="img-wrap">
+                <img src="Fotos del core/Captura de pantalla 2025-11-25 a las 16.45.54.png" alt="Ejercicio de core 2">
+              </div>
+              <div class="img-wrap">
+                <img src="Fotos del core/Captura de pantalla 2025-11-25 a las 16.47.20.png" alt="Ejercicio de core 3">
+              </div>
+            </div>
+          </article>
+
+          <!-- Hidratacion -->
+          <article class="aprendizaje-card plantilla-card">
+            <div class="aprendizaje-card-title">
+              -- Hidratación --
+            </div>
+
+            <h3>¿Qué es?</h3>
+            <p>La hidratación es el proceso por el cual el cuerpo obtiene y mantiene el agua que necesita para funcionar correctamente. El agua permite regular la temperatura, transportar nutrientes, eliminar desechos y mantener en buen estado las células, órganos y tejidos. En pocas palabras: hidratarse es darle al cuerpo el agua esencial para que puede realizar todas sus funciones vitales</p>
+
+            <h3>¿Qué es recomendable para cualquier persona?</h3>
+            <ul>
+              <li>Beber suficiente agua al día</li>
+                  <ol>
+                    <li>Para adultos, suele recomendarse 1.5 a 2 litros al día (aprox. 6–8 vasos).</li>
+                    <li>Si hace calor, haces deporte o sudas mucho, necesitas más.</li>
+                    </ol>
+                <li>Consumir alimentos ricos en agua</li>
+                  <ol>
+                    <li>Frutas: sandía, melón, naranja, piña</li>
+                    <li>Verduras: pepino, lechuga, tomate, calabacín</li>
+                    </ol>
+                    <li>Evitar exceso de bebidas que deshidratan.</li>
+                  <ol>
+                    <li>Café en exceso</li>
+                    <li>Alcohol</li>
+                    <li>Refrescos muy azucarados</li>
+                    </ol>
+            </ul>
+
+            <h3>¿Qué enfermedades o problemas puede causar una mala hidratación?</h3>
+            <p>Una mala hidratación puede generar desde molestias leves hasta problemas de salud más serios. La falta de agua en el cuerpo puede causar deshidratación, que se manifiesta con dolor de cabeza, mareos, fatiga, piel seca, sed intensa y orina oscura. También aumenta el riesgo de cálculos renales, ya que los riñones no pueden eliminar adecuadamente las sales y minerales. Asimismo, puede provocar infecciones urinarias, porque al producirse menos orina las bacterias se acumulan con mayor facilidad. La hidratación insuficiente contribuye al estreñimiento, pues el agua es necesaria para el movimiento intestinal, y favorece el golpe de calor, sobre todo con altas temperaturas o actividad física. Además, puede causar problemas circulatorios, ya que la sangre se vuelve más densa y el corazón debe trabajar más, y también afecta a la piel, provocando sequedad, descamación y pérdida de elasticidad.</p>
+
+            <div class="card-images seleccion-img-wrap">
+              <div class="img-wrap">
+                <img src="Fotos de la hidratacion /Captura de pantalla 2025-11-27 a las 18.35.46.png" alt="Selección española de rugby">
+              </div>
+            </div>
+             <div class="card-images seleccion-img-wrap">
+              <div class="img-wrap">
+                <img src="Fotos de la hidratacion /Captura de pantalla 2025-11-27 a las 18.35.37.png" alt="Selección española de rugby">
+              </div>
+            </div>
+
+
+          </article>
+        </div>
+      </div>
+
+      <!-- PARTE 2 (Capacidades + FLATO + Rugby) -->
+      <div class="aprendizaje-part" data-part="2">
+        <div class="aprendizaje-grid">
+          <!-- Capacidades físicas -->
+          <article class="aprendizaje-card resistencia-card">
+            <div class="aprendizaje-card-title">
+              -- Capacidades Fisicas --
+            </div>
+
+            <h3>¿Cuales son?</h3>
+            <ol>
+              <li> Fuerza</li>
+              <li> Resistencia</li>
+              <li> Flexibilidad</li>
+              <li> Velocidad</li> 
+            </ol>           
+            
+            <h3>Resistencia </h3>
+            <p>La resistencia es básicamente la capacidad que tiene el cuerpo, sobre todo el sistema cardiorrespiratorio, para aguantar una actividad física durante un buen rato sin venirse abajo. Normalmente se divide en dos tipos según cómo consiga la energía. Por un lado está la resistencia aeróbica, que usa oxígeno y es la típica de esfuerzos más largos y constantes, como cuando alguien se pone a correr unos 10 km a un ritmo medio. Y luego está la resistencia anaeróbica, que aparece en actividades más explosivas porque el cuerpo genera energía sin usar oxígeno. Esta última se puede ver en esfuerzos cortos pero intensos: la versión láctica dura entre unos 15 segundos y 3 minutos (por ejemplo correr 400 metros), mientras que la aláctica es incluso más breve, de apenas unos segundos, como pasa en un salto de altura o algún esfuerzo así de rápido.</p>
+            <div class="img-wrap">
+              <img src="fotos de capacidades fisicas/resitencia.png" alt="Ejercicio de resistencia">
+            </div>
+
+            <h3>Fuerza </h3>
+            <p>Al iniciar un ejercicio aeróbico orientado a la resistencia, el cuerpo obtiene energía sobre todo a partir de las grasas, manteniendo niveles de lactato estables y utilizando principalmente las fibras musculares de tipo I, que son las más eficientes para esfuerzos prolongados. Cuando hablamos de fuerza, nos referimos a la capacidad de los músculos para soportar o mover una resistencia, y suele clasificarse en tres tipos: la fuerza máxima, que es el mayor esfuerzo que un músculo puede realizar y se trabaja en disciplinas como la halterofilia; la fuerza–resistencia, que permite mantener contracciones repetidas durante mucho tiempo, típica de deportes como la natación o el remo; y la fuerza–velocidad, que combina potencia y rapidez y suele aparecer en movimientos explosivos como los sprints o los saltos. Los métodos para entrenar cualquiera de estas formas de fuerza dependen de factores como la duración del esfuerzo, la intensidad, la velocidad de ejecución y las pausas entre series.</p>
+            <div class="img-wrap">
+              <img src="fotos de capacidades fisicas/fuerza.png" alt="Ejercicio de fuerza">
+            </div>
+
+            <h3>Flexibilidad </h3>
+            <p>La flexibilidad se entiende como la habilidad que tienen los músculos y las articulaciones para desplazarse a lo largo de todo su recorrido máximo de movimiento. Esta capacidad está vinculada directamente con el sistema muscular y osteoarticular. Existen dos grandes tipos de flexibilidad:</p>
+            <ol>
+              <li>Flexibilidad dinámica: implica mover una articulación alternando fases de estiramiento y acortamiento muscular, conservando la elongación solo por un instante, como sucede en los ejercicios de movilidad.</li>
+              <li>Flexibilidad estática: consiste en la facultad de mantener un músculo estirado durante un tiempo determinado sin modificar la postura. </li>
+            </ol>
+            <p>Además, la flexibilidad también puede clasificarse según la fuente de la fuerza que interviene en el estiramiento:</p>
+            <ul>
+              <li>Flexibilidad pasiva: se obtiene gracias a fuerzas externas, por ejemplo, la ayuda de otra persona para realizar un estiramiento.</li>
+              <li>Flexibilidad activa: se desarrolla mediante la contracción del músculo opuesto al que se intenta estirar. Un ejemplo sería contraer los cuádriceps para estirar los isquiotibiales, o acciones propias de la movilidad articular como una patada en el fútbol</li>
+            </ul>
+            <div class="img-wrap">
+              <img src="fotos de capacidades fisicas/flexibilidad.png" alt="Ejercicio de flexibilidad">
+            </div>
+
+            <h3>Velocidad </h3>
+            <p>La velocidad se entiende como la capacidad del cuerpo para llevar a cabo acciones musculares en el menor tiempo posible y con la mayor eficacia, estando muy relacionada con el funcionamiento del sistema neuromuscular.
+            Se pueden diferenciar varios tipos de velocidad:</p>
+            <ol>
+              <li>Velocidad de reacción: es la habilidad para responder de manera inmediata ante un estímulo. Un ejemplo típico es la salida desde los tacos en una prueba de 100 metros, donde la rapidez y la eficiencia de la respuesta son fundamentales.</li>
+              <li>Velocidad gestual: hace referencia a la capacidad de ejecutar movimientos aislados lo más rápido posible. Esto se aprecia, por ejemplo, en el lanzamiento de peso, donde la rapidez y precisión del gesto son determinantes para lograr una mayor distancia.</li>
+              <li>Velocidad de desplazamiento o cíclica: consiste en realizar una secuencia continua de movimientos repetitivos en el menor tiempo. Se observa claramente en una carrera de velocidad, como los 100 metros lisos, donde la rapidez de cada zancada influye directamente en el rendimiento total.</li>
+            </ol>
+            <div class="img-wrap">
+              <img src="fotos de capacidades fisicas/Velocidad.png" alt="Ejercicio de velocidad">
+            </div>
+          </article>
+
+          <!-- FLATO (movido aquí a la Parte 2) -->
+          <article class="aprendizaje-card flato-card">
+            <div class="aprendizaje-card-title">
+              -- FLATO --
+            </div>
+            <h3>¿Qué es?</h3>
+            <p>El flato es un dolor breve y punzante que suele aparecer a un lado del abdomen durante actividades intensas. Se cree que está relacionado con el diafragma y sus ligamentos.</p>
+
+            <h3>A tener en cuenta</h3>
+            <ol>
+              <li>Bajar el ritmo o parar unos segundos.</li>
+              <li>Respirar de forma profunda y constante.</li>
+              <li>Estirar o masajear suavemente la zona dolorida.</li>
+              <li>Mantener buena hidratación antes, durante y después del ejercicio.</li>
+            </ol>
+
+            <div class="card-images">
+              <div class="img-wrap">
+                <img src="Fotos de flato/Captura de pantalla 2025-11-25 a las 17.39.53.png" alt="Información sobre el flato">
+              </div>
+            </div>
+          </article>
+
+          <!-- Rugby -->
+          <article class="aprendizaje-card fuerza-card">
+            <div class="aprendizaje-card-title">
+              -- RUGBY --
+            </div>
+
+            <h3>¿Cómo se originó el rugby?</h3>
+            <p>El rugby nació en Inglaterra en el siglo XIX. La historia más conocida cuenta que en 1823, en el colegio Rugby School, un estudiante llamado William Webb Ellis cogió la pelota con las manos en un partido de fútbol y corrió con ella. A partir de ese gesto, se empezaron a crear reglas nuevas hasta convertirse en un deporte propio.</p>
+            <div class="card-images">
+              <div class="img-wrap">
+                <img src="fotos del rugby/origen1.png" alt="Origen del rugby 1">
+              </div>
+              <div class="img-wrap">
+                <img src="fotos del rugby/roigen2.png" alt="Origen del rugby 2">
+              </div>
+            </div>
+
+            <h3>¿Qué reglas tiene el rugby?</h3>
+            <ol>
+              <li>Se juega con una pelota ovalada y 15 jugadores por equipo.</li>
+              <li>La pelota solo se pasa hacia atrás o lateral, nunca hacia delante.</li>
+              <li>Para puntuar se hace un ensayo, apoyando la pelota en la zona de marca.</li>
+              <li>Hay otras formas de puntuar con chuts a palos después de infracciones.</li>
+              <li>El contacto es permitido, pero los placajes peligrosos están prohibidos.</li>
+              <li>Fases importantes: scrum (melé) y line-out cuando la pelota sale fuera.</li>
+            </ol>
+            <div class="img-wrap">
+              <img src="fotos del rugby/reglas.png" alt="Reglas básicas del rugby">
+            </div>
+
+            <h3>¿Cómo funcionan las faltas?</h3>
+            <p>Las faltas ocurren cuando un jugador hace algo ilegal, como:</p>
+            <ol>
+              <li>Placaje alto o peligroso.</li>
+              <li>Pase hacia delante.</li>
+              <li>Golpear o empujar sin balón.</li>
+              <li>Entrar mal en un ruck o melé.</li>
+            </ol>
+            <p>Cuando hay falta, el árbitro puede dar:</p>
+            <ol>
+              <li>Golpe de castigo (penal).</li>
+              <li>Scrum para el equipo contrario.</li>
+              <li>Tarjeta amarilla (2 minutos fuera) o roja en casos graves.</li>
+            </ol>
+            <div class="img-wrap">
+              <img src="fotos del rugby/faltas.png" alt="Tipos de faltas en rugby">
+            </div>
+
+            <h3>La selección española de rugby</h3>
+            <p>La selección masculina se conoce como el XV del León. Juega competiciones europeas y, aunque el rugby no es el deporte más popular del país, ha ido creciendo con el tiempo. España también compite en Rugby 7, donde ha tenido buenos resultados internacionales.</p>
+            
+            <div class="card-images seleccion-img-wrap">
+              <div class="img-wrap">
+                <img src="fotos del rugby/seleccion.png" alt="Selección española de rugby">
+              </div>
+            </div>
+
+          </article>
+        </div>
+      </div>
+
+      <!-- PARTE 3 (con ácido láctico) -->
+      <div class="aprendizaje-part" data-part="3">
+        <div class="aprendizaje-grid">
+
+          <!-- ÁCIDO LÁCTICO (movido desde Parte 2) -->
+          <article class="aprendizaje-card lactico-card">
+            <div class="aprendizaje-card-title">
+              -- ÁCIDO LÁCTICO --
+            </div>
+
+            <h3>¿Qué es?</h3>
+            <p>El ácido láctico es una sustancia que el cuerpo genera cuando trabaja a alta intensidad y no llega suficiente oxígeno a los músculos. Su acumulación se relaciona con la sensación de quemazón y fatiga muscular.</p>
+
+            <div class="card-images">
+              <div class="img-wrap">
+                <img src="Fotos del acido lactido /Captura de pantalla 2025-11-25 a las 18.12.30.png" alt="Esquema ácido láctico">
+              </div>
+              <div class="img-wrap">
+                <img src="Fotos del acido lactido /Captura de pantalla 2025-11-25 a las 18.14.40.png" alt="Gráfico ácido láctico">
+              </div>
+            </div>
+          </article>
+
+          <!-- REFLEXIÓN GENERAL -->
+          <article class="aprendizaje-card reflex-card">
+            <div class="aprendizaje-card-title">
+              -- Musculos --
+            </div>
+
+            <h3>¿Qué son los músculos agonistas, antagonistas y sinergistas?</h3>
+            <h4>Músculo agonista</h4>
+            <p>Es el músculo principal que realiza un movimiento.
+Es el que se contrae para generar la acción.</p>
+
+            
+            <p>3 ejemplos de músculos agonistas</p>
+            <ol>
+              <li>Bíceps braquial → en la flexión del codo.</li>
+              <li>Cuádriceps → en la extensión de la rodilla.</li>
+              <li>Dorsal ancho → en la tracción (como al hacer jalones o dominadas).</li>
+            </ol>
+             <div class="card-images seleccion-img-wrap">
+              <div class="img-wrap">
+                <img src="musculos /agonista.png" alt="Selección española de rugby">
+              </div>
+            </div>
+            
+              <h4> Músculo antagonista</h4>
+            <p>Es el músculo que se opone al movimiento del agonista.
+Mientras el agonista se contrae, el antagonista se relaja.</p>
+
+        
+            <p>3 ejemplos de músculos antagonistas</p>
+            <ol>
+              <li>Tríceps braquial → se opone al bíceps en la flexión del codo.</li>
+              <li>Isquiotibiales → se oponen al cuádriceps en la extensión de rodilla.</li>
+              <li>Deltoides anterior → se opone al dorsal ancho en la tracción.</li>
+            </ol>
+             <div class="card-images seleccion-img-wrap">
+              <div class="img-wrap">
+                <img src="musculos /antagonista.png" alt="Selección española de rugby">
+              </div>
+            </div>
+            
+              <h4>Músculo sinergista</h4>
+            <p>Son músculos que ayudan al agonista, aportando estabilidad o fuerza extra.
+No son los protagonistas pero colaboran en el movimiento.</p>
+            <p>3 ejemplos de músculos sinergistas</p>
+            <ol>
+              <li>Braquial anterior → ayuda al bíceps en la flexión del codo.</li>
+              <li>Sóleo → ayuda al gastrocnemio en la flexión plantar del pie.</li>
+              <li>Trapecio y romboides → ayudan en los movimientos de tracción junto al dorsal ancho.</li>
+            </ol>
+            
+           
+            <div class="card-images seleccion-img-wrap">
+              <div class="img-wrap">
+                <img src="musculos /sinergista.png" alt="Selección española de rugby">
+              </div>
+            </div>
+          </article>
+
+          <!-- Abujetas -->
+          <article class="aprendizaje-card objetivos-card">
+            <div class="aprendizaje-card-title">
+              -- ABUJETAS --
+            </div>
+
+            <h3>¿Qué son?</h3>
+            <p>“Las agujetas son dolores musculares que aparecen 24–72 horas después de un ejercicio intenso debido a pequeñas lesiones y la inflamación de las fibras musculares, indicando adaptación y fortalecimiento muscular.”</p>
+
+            <h3>¿Que debería hacer ?</h3>
+            <ol>
+              <li>Descanso activo: Realiza actividades suaves como caminar o nadar para mejorar la circulación y disminuir la rigidez.</li>
+              <li>Estiramientos suaves: Haz estiramientos ligeros y mantenidos para reducir la tensión y mejorar la flexibilidad.</li>
+              <li>Hidratación adecuada: Bebe suficiente agua para favorecer la recuperación muscular y evitar la deshidratación.</li>
+              <li>Masaje terapéutico: Aplica masajes suaves en las zonas doloridas para mejorar la circulación y reducir la inflamación.</li>
+              <li>Aplicación de calor: Usa compresas calientes o toma un baño caliente para relajar los músculos y disminuir la tensión por agujetas</li>
+            </ol>
+
+            <div class="card-images seleccion-img-wrap">
+              <div class="img-wrap">
+                <img src="abujetas/Captura de pantalla 2025-11-27 a las 19.01.18.png" alt="Selección española de rugby">
+              </div>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JUEGO FINAL -->
+    <section id="juego-final" class="page-section" aria-labelledby="titulo-juego">
+      <button class="close-section" aria-label="Cerrar sección">✕</button>
+      <h2 id="titulo-juego">Juego final</h2>
+
+      <p>
+        Roi, lo que ves aquí es un tablero de ajedrez especial. La mecánica es sencilla: 
+        cada vez que eliminas <strong>tres piezas negras</strong>, el juego activa una pregunta al estilo Kahoot. 
+        Si respondes correctamente, continúas la partida; pero si fallas, el juego se reinicia desde el principio.
+      </p>
+
+      <div id="chess-game">
+        <div id="chess-info">
+          <div id="chess-turn">Turno: blancas</div>
+          <div id="chess-captures">
+            <div>Fichas capturadas por blancas: <span id="white-captures">0</span></div>
+            <div>Fichas capturadas por negras: <span id="black-captures">0</span></div>
+          </div>
+        </div>
+
+        <div id="chess-board-wrapper">
+          <div id="chess-board" aria-label="Tablero de ajedrez"></div>
+        </div>
+
+        <button id="chess-reset" type="button">Reiniciar partida</button>
+
+        <!-- MODAL TIPO KAHOOT -->
+        <div id="quiz-modal" class="quiz-hidden" aria-hidden="true">
+          <div class="quiz-backdrop"></div>
+          <div class="quiz-card" role="dialog" aria-modal="true" aria-labelledby="quiz-question">
+            <h3>Pregunta sorpresa</h3>
+            <p id="quiz-question"></p>
+            <div id="quiz-options" class="quiz-options"></div>
+            <p class="quiz-hint">Si fallas, se reinicia la partida completa.</p>
+          </div>
+        </div>
+        <!-- FIN MODAL -->
+      </div>
+    </section>
+
+
+  <!-- FRASE DEL FONDO -->
+  <div id="marca-fondo">hecho para Roi Vázquez Neira</div>
+
+  <!-- Librería de ajedrez (versión segura) + tu JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js" integrity="sha512-40VRp1+fauX7g61ZdQpOiOJTkBbYwVlTLjCXHK9Svf0Mmz9K8Smg5k6LVrc0eEc9+pApf1HNL6Cim/wFqZeRkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="sportfolio3.js"></script>
+</body>
+</html>
+
