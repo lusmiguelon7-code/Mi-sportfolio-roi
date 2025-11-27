@@ -1036,16 +1036,3 @@ li {
   opacity: 0.6;
   pointer-events: none;
 }
-.titulo-con-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;       /* separación entre logo y texto */
-  justify-content: center;
-}
-
-.logo-rs {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;  /* misma forma que el estilo de tu captura */
-  object-fit: cover;
-}
