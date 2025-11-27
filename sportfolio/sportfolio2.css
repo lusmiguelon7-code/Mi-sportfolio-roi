@@ -1,0 +1,1038 @@
+/* -------------------------
+   Reset y estilos base
+--------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* -------------------------
+   HEADER
+--------------------------*/
+header {
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  background-image: url("ChatGPT Image 19 nov 2025, 17_19_57.png");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+header h1 {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* -------------------------
+   NAV
+--------------------------*/
+nav {
+  position: relative;
+  z-index: 1;
+  margin-top: 18px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* -------------------------
+   SECCIONES (modal)
+--------------------------*/
+.page-section {
+  display: none;
+  min-height: 60vh;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.page-section.active {
+  display: block !important;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 90px 40px;
+  background: rgba(15, 15, 15, 0.96);
+  z-index: 1200;
+}
+
+.page-section.active h2 {
+  border-bottom: 2px solid #1b869c;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* Botón cerrar */
+.close-section {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.close-section:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* -------------------------
+   SOBRE MÍ
+--------------------------*/
+.bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+}
+
+.bio-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.photo-box {
+  flex: 0 0 260px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  height: auto;
+}
+
+.photo-box img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.photo-box figcaption {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+/* -------------------------
+   DIETA
+--------------------------*/
+.dieta-wrapper {
+  margin: 10px 0 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 10px;
+}
+
+.dieta-wrapper summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 4px;
+  list-style: none;
+}
+
+.dieta-wrapper summary::-webkit-details-marker {
+  display: none;
+}
+
+.dieta-wrapper summary::before {
+  content: "🍽️";
+  display: inline-block;
+  margin-right: 8px;
+  transform-origin: center;
+}
+
+.dieta-semana details {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.dieta-semana summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 4px;
+}
+
+.dieta-semana summary::-webkit-details-marker {
+  display: none;
+}
+
+.dieta-semana summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 8px;
+  transform-origin: center;
+  transition: transform 150ms ease;
+}
+
+.dieta-semana details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* -------------------------
+   GRÁFICAS SOBRE MÍ
+--------------------------*/
+.chart-wrap {
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 12px;
+  border-radius: 8px;
+  height: 420px;
+}
+
+/* Details de frecuencia cardiaca (diferente a la dieta) */
+.cardio-details {
+  margin: 14px 0 24px;
+  border-radius: 12px;
+  background: radial-gradient(circle at top, rgba(183, 28, 28, 0.5), rgba(0, 0, 0, 0.8));
+  border: 1px solid rgba(244, 81, 30, 0.7);
+  padding: 8px 10px 12px;
+}
+
+.cardio-details summary {
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.cardio-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.cardio-details summary::before {
+  content: "♥";
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.cardio-chart {
+  margin-top: 10px;
+}
+
+/* Texto y tabla frecuencia cardiaca */
+.cardio-text p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.fc-table-wrapper {
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.fc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.fc-table th,
+.fc-table td {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 4px 6px;
+  text-align: center;
+}
+
+.fc-table thead {
+  background: rgba(255, 193, 7, 0.25);
+  font-weight: 700;
+}
+
+.fc-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Details de pruebas físicas */
+.pruebas-details {
+  margin: 10px 0 24px;
+  border-radius: 12px;
+  background: radial-gradient(circle at top, rgba(25, 118, 210, 0.5), rgba(0, 0, 0, 0.85));
+  border: 1px solid rgba(100, 181, 246, 0.7);
+  padding: 8px 10px 12px;
+}
+
+.pruebas-details summary {
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.pruebas-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.pruebas-details summary::before {
+  content: "🏃";
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.pruebas-intro,
+.pruebas-refuerzo {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* -------------------------
+   FRASE PIE
+--------------------------*/
+#marca-fondo {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85rem;
+  opacity: 0.35;
+  color: #ccc;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* -------------------------
+   APRENDIZAJE
+--------------------------*/
+.aprendizaje-grid {
+  margin-top: 24px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: flex-start; /* cada recuadro se ajusta a su contenido */
+}
+
+.aprendizaje-tabs {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.aprendizaje-tab {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.aprendizaje-tab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.aprendizaje-tab.active {
+  background: linear-gradient(120deg, #4caf50, #00bcd4);
+  border-color: transparent;
+  box-shadow: 0 0 12px rgba(0, 188, 212, 0.7);
+}
+
+.aprendizaje-part {
+  display: none;
+}
+
+.aprendizaje-part.active {
+  display: block;
+}
+
+/* -------------------------
+   TARJETAS APRENDIZAJE
+--------------------------*/
+.aprendizaje-card {
+  position: relative;
+  padding: 18px 18px;
+  border-radius: 18px;
+  background: rgba(10, 10, 10, 0.9);
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 14px 28px rgba(0, 0, 0, 0.7);
+}
+
+.aprendizaje-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    #4caf50,
+    #00bcd4,
+    #ff9800,
+    #e91e63,
+    #4caf50
+  );
+  background-size: 300% 300%;
+  opacity: 0.7;
+  z-index: -1;
+  animation: glow-border 8s linear infinite;
+}
+
+.aprendizaje-card::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: radial-gradient(circle at top, #1c1c1c, #0f0f0f);
+  z-index: -1;
+}
+
+.aprendizaje-card h3 {
+  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+  margin: 6px 0 2px;
+}
+
+.aprendizaje-card p {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  line-height: 1.5;
+  margin: 0 0 4px;
+}
+
+.aprendizaje-card ul,
+.aprendizaje-card ol {
+  margin: 0 0 6px 18px;
+  padding-left: 0;
+}
+
+.aprendizaje-card > :last-child {
+  margin-bottom: 0;
+}
+
+@keyframes glow-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Título de tarjetas */
+.aprendizaje-card-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  transform: translateY(0) skewY(-1deg);
+}
+
+.aprendizaje-card-title::before,
+.aprendizaje-card-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 60%;
+  margin: 4px auto;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  opacity: 0.5;
+}
+
+/* listas */
+li {
+  padding-bottom: 4px;
+}
+
+/* -------------------------
+   TIPOS DE LETRA POR RECUADRO
+--------------------------*/
+.core-card {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+.core-card .aprendizaje-card-title {
+  color: #9cffc7;
+}
+
+.flato-card {
+  font-family: "Georgia", "Times New Roman", serif;
+}
+.flato-card .aprendizaje-card-title {
+  color: #ffcc80;
+}
+
+.lactico-card {
+  font-family: "Courier New", monospace;
+}
+.lactico-card .aprendizaje-card-title {
+  color: #80deea;
+}
+
+.resistencia-card {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+}
+.resistencia-card .aprendizaje-card-title {
+  color: #c5e1a5;
+}
+
+.fuerza-card {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+}
+.fuerza-card .aprendizaje-card-title {
+  color: #ffab91;
+}
+
+/* Nueva plantilla: distinta fuente pero parecida al core */
+.plantilla-card {
+  font-family: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+.plantilla-card .aprendizaje-card-title {
+  color: #ffe0b2;
+}
+
+.reflex-card {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+.reflex-card .aprendizaje-card-title {
+  color: #b39ddb;
+}
+
+.diario-card {
+  font-family: "Comic Sans MS", "Segoe UI", system-ui, sans-serif;
+}
+.diario-card .aprendizaje-card-title {
+  color: #ffe082;
+}
+
+.objetivos-card {
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+}
+.objetivos-card .aprendizaje-card-title {
+  color: #80cbc4;
+}
+
+/* -------------------------
+   IMÁGENES DENTRO DE RECUADROS
+--------------------------*/
+.card-images {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.img-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;               /* para centrar el contenido */
+  align-items: center;         /* centrar vertical */
+  justify-content: center;     /* centrar horizontal */
+}
+
+.img-wrap img {
+  display: block;
+  max-width: 100%;
+  max-height: 230px;           /* altura máxima del recuadro */
+  width: auto;
+  height: auto;
+  object-fit: contain;         /* se ve toda la imagen sin recortarse */
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.img-wrap:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.07);
+}
+
+/* -------------------------
+   Rugby más amplio y selección más visible
+--------------------------*/
+.aprendizaje-card.fuerza-card {
+  padding: 24px 24px;    /* un poco más de espacio interno */
+  grid-column: span 2;   /* ocupa dos columnas en pantallas grandes */
+}
+
+@media (max-width: 800px) {
+  .aprendizaje-card.fuerza-card {
+    grid-column: span 1; /* en móviles vuelve a una sola columna */
+  }
+}
+
+.fuerza-card .seleccion-img-wrap img {
+  max-height: 280px;     /* imagen de la selección algo más grande */
+}
+
+/* -------------------------
+   AJEDREZ
+--------------------------*/
+#chess-game {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+#chess-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: radial-gradient(circle at top, #263238, #0b1014);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+#chess-turn {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+#chess-captures {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+#chess-board-wrapper {
+  padding: 12px;
+  border-radius: 18px;
+  background: radial-gradient(circle at top, #37474f, #11171b);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 20px 36px rgba(0, 0, 0, 0.7);
+}
+
+#chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(32px, 56px));
+  grid-auto-rows: minmax(32px, 56px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chess-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.3rem, 4vw, 2.1rem);
+  user-select: none;
+  border: none;
+}
+
+.chess-square.light {
+  background: #f0d9b5;
+}
+
+.chess-square.dark {
+  background: #b58863;
+}
+
+.chess-square.player-selectable {
+  cursor: pointer;
+}
+
+.chess-square.selected {
+  outline: 3px solid #ffeb3b;
+  outline-offset: -3px;
+}
+
+.chess-square.possible {
+  box-shadow: inset 0 0 0 3px rgba(76, 175, 80, 0.9);
+}
+
+#chess-reset {
+  border-radius: 999px;
+  padding: 8px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#chess-reset:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#chess-board.game-over {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* -------------------------
+   RESPONSIVE
+--------------------------*/
+@media (max-width: 900px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-box {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 60px 16px;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    letter-spacing: 6px;
+  }
+
+  .page-section.active {
+    padding: 70px 16px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #chess-board {
+    grid-template-columns: repeat(8, minmax(28px, 40px));
+    grid-auto-rows: minmax(28px, 40px);
+  }
+}
+
+.plandafo1,
+.plandafo2,
+.plandafo3,
+.plandafo4 {
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.plandafo1 {
+  border-bottom: 2px solid #1b9c98;
+}
+.plandafo2 {
+  border-bottom: 2px solid #7e9c1b;
+}
+.plandafo3 {
+  border-bottom: 2px solid #7a1b9c;
+}
+.plandafo4 {
+  border-bottom: 2px solid #9c571b;
+}
+
+/* vídeos de refuerzo */
+.video-link {
+  position: relative;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.video-link a {
+  color: #4fc3f7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.video-preview {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 320px;
+  height: 180px;
+  display: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.video-link:hover .video-preview {
+  display: block;
+}
+
+.video-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* =========================================
+   1) MÁS ESPACIO EN LAS PARTES 1 Y 2
+========================================= */
+
+.aprendizaje-part[data-part="1"] .aprendizaje-grid,
+.aprendizaje-part[data-part="2"] .aprendizaje-grid {
+  gap: 32px;
+}
+
+/* En pantallas grandes, maquetación más ancha y cómoda */
+@media (min-width: 1000px) {
+  .aprendizaje-part[data-part="1"] .aprendizaje-grid,
+  .aprendizaje-part[data-part="2"] .aprendizaje-grid {
+    grid-template-columns: repeat(2, minmax(360px, 1fr));
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   2) TARJETA "CAPACIDADES FÍSICAS"
+========================================= */
+
+.resistencia-card {
+  padding: 26px 26px;
+}
+
+/* Texto más cómodo de leer */
+.resistencia-card p,
+.resistencia-card li {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-width: 70ch;
+}
+
+/* Separar bien cada bloque: Resistencia, Fuerza, Flexibilidad, Velocidad */
+.resistencia-card h3 {
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+/* A partir del segundo h3, línea suave arriba para separar bloques */
+.resistencia-card h3:not(:first-of-type) {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* Listas con algo más de margen */
+.resistencia-card ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Imágenes de capacidades físicas un pelín más grandes y centradas */
+.resistencia-card .img-wrap {
+  margin-top: 8px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+   3) TARJETA "MÚSCULOS" (agonista/antagonista/sinergista)
+========================================= */
+
+.reflex-card {
+  padding: 26px 26px;
+}
+
+/* Texto cómodo y ancho controlado */
+.reflex-card p,
+.reflex-card li {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-width: 70ch;
+}
+
+/* Separar bien Agonista / Antagonista / Sinergista */
+.reflex-card h3,
+.reflex-card h4 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+/* Del segundo h4 en adelante, pequeña línea arriba para marcar bloques */
+.reflex-card h4:not(:first-of-type) {
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* Listas ordenadas un poco más claras */
+.reflex-card ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Imágenes de músculos bien centradas y algo más grandes */
+.reflex-card .seleccion-img-wrap .img-wrap {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+/* =========================================
+   4) AJUSTE GENERAL TARJETAS APRENDIZAJE
+========================================= */
+
+.aprendizaje-card p {
+  margin-bottom: 6px;
+}
+
+.aprendizaje-card ul li,
+.aprendizaje-card ol li {
+  margin-bottom: 4px;
+}
+/* ================================
+   MODAL TIPO KAHOOT (AJEDREZ)
+================================ */
+#quiz-modal.quiz-hidden {
+  display: none;
+}
+
+#quiz-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+}
+
+.quiz-card {
+  position: relative;
+  max-width: 420px;
+  width: 90%;
+  background: radial-gradient(circle at top, #263238, #000000);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
+  border: 2px solid #00e5ff;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.quiz-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#quiz-question {
+  font-size: 0.98rem;
+  margin-bottom: 12px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.quiz-option-btn {
+  border-radius: 999px;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(120deg, #4caf50, #00bcd4);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+.quiz-option-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  filter: brightness(1.05);
+}
+
+.quiz-hint {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Mientras el quiz está abierto, desactivar clicks en el tablero visualmente */
+#chess-board.quiz-locked {
+  opacity: 0.6;
+  pointer-events: none;
+}
